@@ -19,8 +19,6 @@ for i in range(1,12):
         for link in item.find_all('a', href=True):
             productlinks.append(baseurl + link['href'])
 
-#linktest= 'https://www.ikea.co.id/in/produk/kursi-makan/kursi/adde-art-90219179'
-
 productlist= []
 for link in tqdm(productlinks, desc= 'Saving Data Product'):
     r= requests.get(link, headers=header)
