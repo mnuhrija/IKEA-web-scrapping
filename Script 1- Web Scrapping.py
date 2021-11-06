@@ -42,4 +42,4 @@ for link in tqdm(productlinks, desc= 'Saving Data Product'):
 
 chair_df= pd.DataFrame(productlist)
 print(chair_df.head(10))
-chair_df.to_csv('IKEA_product.csv')
+chair_df.to_csv('IKEA_product.csv', index=False)
